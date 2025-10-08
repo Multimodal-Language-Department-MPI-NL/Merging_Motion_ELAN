@@ -1,59 +1,102 @@
-# Merging_Motion_ELAN/Merging_Motion_ELAN/README.md
+# Merging MediaPipe with ELAN Annotations
 
-# Merging Motion ELAN
+Merge MediaPipe keypoint time series with ELAN annotation data for multimodal gesture analysis.
 
-## Overview
-Merging Motion ELAN is a project designed to facilitate the merging of ELAN and MediaPipe data for multimodal analysis. This project provides tools and scripts to process and analyze motion data, enabling researchers and developers to gain insights from combined datasets.
+## 🔬 Research Context
 
-## Installation
-To set up the project, follow these steps:
+This module enables temporal alignment of gesture motion data with linguistic annotations, supporting multimodal communication research that examines the relationship between speech and gesture.
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/Merging_Motion_ELAN.git
-   ```
-2. Navigate to the project directory:
-   ```
-   cd Merging_Motion_ELAN
-   ```
-3. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+## 🎯 What This Project Does
 
-## Usage
-To use the project, you can run the main script or utilize the provided Jupyter notebooks for analysis. 
+1. **Load multimodal data**: Read MediaPipe keypoint CSVs and ELAN annotation files
+2. **Temporal alignment**: Map ELAN annotations to corresponding time points in motion data
+3. **Data merging**: Combine motion trajectories with linguistic annotations
+4. **Export merged datasets**: Save aligned multimodal data for downstream analysis
 
-### Running the Main Script
-You can execute the main script using:
-```
-python src/main.py
-```
+## 📊 Merging Process
 
-### Jupyter Notebooks
-The analysis can be performed using the Jupyter notebooks located in the `notebooks` directory. Open the desired notebook and run the cells to perform the analysis.
+1. **Load Data Sources**: Import MediaPipe keypoints and ELAN annotation files
+2. **Inspect Formats**: Examine data structures and time ranges
+3. **Temporal Mapping**: Align annotation time windows with motion data timestamps
+4. **Merge Datasets**: Combine motion and annotation data by time
+5. **Export Results**: Save merged multimodal datasets
 
-## Directory Structure
+## 🔧 Methods
+
+- **Time-based alignment**: Map ELAN begin/end times to MediaPipe timestamps
+- **Annotation propagation**: Assign annotation labels to corresponding motion frames
+- **Multi-file processing**: Handle multiple participants/sessions
+- **Data validation**: Ensure temporal consistency across modalities
+
+## 📁 Project Structure
+
 ```
 Merging_Motion_ELAN/
-├── data/
-│   ├── processed/
-│   └── raw/
+├── README.md
+├── environment.yml
 ├── notebooks/
-│   └── analysis.ipynb
+│   └── Multimodal_Merging.ipynb
+├── data/
+│   ├── processed/                     # Processed motion data
+│   └── raw/                          # Raw input files
 ├── src/
 │   ├── __init__.py
-│   ├── main.py
-│   └── utils.py
-├── tests/
-│   ├── __init__.py
-│   └── test_processing.py
-├── requirements.txt
-└── README.md
+│   ├── main.py                       # Main processing script
+│   └── utils.py                      # Utility functions
+└── tests/
+    ├── __init__.py
+    └── test_processing.py
 ```
 
-## Contributing
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+## 🚀 Quick Start
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+### Prerequisites
+
+```bash
+conda env create -f environment.yml
+conda activate merging
+```
+
+### Run the Interactive Notebook
+
+```bash
+jupyter lab
+# Open notebooks/Multimodal_Merging.ipynb
+```
+
+### Basic Usage
+
+1. Place MediaPipe keypoint CSVs in `data/processed/`
+2. Place ELAN annotation files in `data/raw/`
+3. Run the merging notebook to align and combine datasets
+4. Export merged data for multimodal analysis
+
+## 📈 Data Format
+
+### Input
+- **MediaPipe CSVs**: Time series with keypoint coordinates (X, Y, Z) and timestamps
+- **ELAN annotations**: Tab-separated files with begin/end times and annotation labels
+
+### Output
+- **Merged CSVs**: Combined datasets with motion data and corresponding annotations
+- **Aligned time series**: Motion trajectories with linguistic labels at each time point
+
+## 🔗 Related Projects
+
+- `../MediaPipe_keypoints_extraction/`
+- `../Smoothing/`
+- `../Normalization/`
+- `../Speed_Acceleration_Jerk/`
+
+## 📖 References
+
+- ELAN documentation: [https://archive.mpi.nl/tla/elan](https://archive.mpi.nl/tla/elan)
+- Multimodal gesture analysis literature
+
+## 🤝 Contributing
+
+This project is part of the MPI Multimodal Interaction Research framework. For questions or contributions, please refer to the main project documentation.
+
+## 📄 License
+
+This project is part of the MPI research framework. Please refer to the main project license for usage terms.
