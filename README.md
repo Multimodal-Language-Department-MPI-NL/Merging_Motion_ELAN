@@ -64,12 +64,6 @@ jupyter lab
 # Open notebooks/Multimodal_Merging.ipynb
 ```
 
-### Basic Usage
-
-1. Place MediaPipe keypoint CSVs in `data/processed/`
-2. Place ELAN annotation files in `data/raw/`
-3. Run the merging notebook to align and combine datasets
-4. Export merged data for multimodal analysis
 
 ## 📈 Data Format
 
@@ -90,6 +84,7 @@ jupyter lab
 
 ## 📖 References
 
+- **Attribution**: Envision Box Module
 - ELAN documentation: [https://archive.mpi.nl/tla/elan](https://archive.mpi.nl/tla/elan)
 - Multimodal gesture analysis literature
 
