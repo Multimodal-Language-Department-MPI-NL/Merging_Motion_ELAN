@@ -1,5 +1,7 @@
 # Merging MediaPipe with ELAN Annotations
 
+> Attribution: Envision Box: [Module](https://www.envisionbox.org/embedded_MergingMultimodal_inPython.html)
+
 Merge MediaPipe keypoint time series with ELAN annotation data for multimodal gesture analysis.
 
 ## 🔬 Research Context
