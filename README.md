@@ -1,6 +1,6 @@
 # Merging MediaPipe with ELAN Annotations
 
-> Attribution: Envision Box: [Module](https://www.envisionbox.org/embedded_MergingMultimodal_inPython.html)
+> Attribution: Use the script prepared for the focus group session. Attribute to this Envision Box module: [Module](https://www.envisionbox.org/embedded_MergingMultimodal_inPython.html)
 
 Merge MediaPipe keypoint time series with ELAN annotation data for multimodal gesture analysis.
 
@@ -79,10 +79,10 @@ jupyter lab
 
 ## 🔗 Related Projects
 
-- `../MediaPipe_keypoints_extraction/`
-- `../Smoothing/`
-- `../Normalization/`
-- `../Speed_Acceleration_Jerk/`
+- `https://github.com/Multimodal-Language-Department-MPI-NL/MediaPipe_keypoints_extraction`
+- `https://github.com/Multimodal-Language-Department-MPI-NL/Smoothing`
+- `https://github.com/Multimodal-Language-Department-MPI-NL/Normalization`
+- `https://github.com/Multimodal-Language-Department-MPI-NL/Speed_Acceleration_Jerk`
 
 ## 📖 References
 
