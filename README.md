@@ -2,7 +2,7 @@
 
 > Attribution: Use the script prepared for the focus group session. Attribute to this Envision Box module: [Module](https://www.envisionbox.org/embedded_MergingMultimodal_inPython.html)
 
-Merge MediaPipe keypoint time series with ELAN annotation data for multimodal gesture analysis.
+This module shows how to merge motion tracking data with annotations from ELAN (or other time series data). This allows you to perform kinematic analyses of gesture strokes or other manually-annotated units from ELAN.
 
 ## 🔬 Research Context
 
