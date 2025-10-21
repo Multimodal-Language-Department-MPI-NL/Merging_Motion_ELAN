@@ -1,6 +1,8 @@
 # Merging MediaPipe with ELAN Annotations
 
-> Attribution: Use the script prepared for the focus group session. Attribute to this Envision Box module: [Module](https://www.envisionbox.org/embedded_MergingMultimodal_inPython.html)
+> Attribution: The custom load _in_event) function used in this script to merge ELAN and motion
+tracking data was sourced from the following EnvisionBox module: Selecting, smoothing, and
+deriving measures from motion tracking, and merging with acoustics and annotations in Python [Module] (https://www.envisionbox.org/embedded_MergingMultimodal_inPython.html)
 
 This module shows how to merge motion tracking data with annotations from ELAN (or other time series data). This allows you to perform kinematic analyses of gesture strokes or other manually-annotated units from ELAN.
 
